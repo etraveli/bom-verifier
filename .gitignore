@@ -1,0 +1,13 @@
+.idea
+*.orig
+*~
+*.class
+.DS_Store
+.DS_Store\?
+._*
+.Trashes
+.gradle
+build
+**/*.iml
+**/*.ipr
+**/*.iws
