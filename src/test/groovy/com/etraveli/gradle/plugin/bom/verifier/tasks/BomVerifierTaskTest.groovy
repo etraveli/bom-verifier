@@ -102,10 +102,8 @@ org.testng:testng:6.8.8"""
               id 'bom-verifier'
             }
             repositories {
-              maven {
-                name = 'artifactory.etraveli.net'
-                url = "https://artifactory.etraveli.net/artifactory/remote-repos/"
-              }
+              mavenCentral()
+              jcenter()
             }
             sourceSets {
               custom

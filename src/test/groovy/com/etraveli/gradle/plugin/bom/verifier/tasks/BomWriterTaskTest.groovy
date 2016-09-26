@@ -135,10 +135,8 @@ org.testng:testng:6.8.8"""
               id 'bom-verifier'
             }
             repositories {
-              maven {
-                name = 'artifactory.etraveli.net'
-                url = "https://artifactory.etraveli.net/artifactory/remote-repos/"
-              }
+              mavenCentral()
+              jcenter()
             }
             dependencies {
               compileOnly 'org.jdom:jdom2:2.0.6'
@@ -174,10 +172,8 @@ org.testng:testng:6.8.8"""
               id 'bom-verifier'
             }
             repositories {
-              maven {
-                name = 'artifactory.etraveli.net'
-                url = "https://artifactory.etraveli.net/artifactory/remote-repos/"
-              }
+              mavenCentral()
+              jcenter()
             }
             bomVerifier {
               bomFileName = 'bipp.bom'
@@ -209,10 +205,8 @@ org.testng:testng:6.8.8"""
               id 'bom-verifier'
             }
             repositories {
-              maven {
-                name = 'artifactory.etraveli.net'
-                url = "https://artifactory.etraveli.net/artifactory/remote-repos/"
-              }
+              mavenCentral()
+              jcenter()
             }
             sourceSets {
               custom
@@ -249,10 +243,8 @@ org.testng:testng:6.8.8"""
               id 'bom-verifier'
             }
             repositories {
-              maven {
-                name = 'artifactory.etraveli.net'
-                url = "https://artifactory.etraveli.net/artifactory/remote-repos/"
-              }
+              mavenCentral()
+              jcenter()
             }
 
             project(':api') {
@@ -302,10 +294,8 @@ org.testng:testng:6.8.8"""
               id 'bom-verifier'
             }
             repositories {
-              maven {
-                name = 'artifactory.etraveli.net'
-                url = "https://artifactory.etraveli.net/artifactory/remote-repos/"
-              }
+              mavenCentral()
+              jcenter()
             }
             bomVerifier {
               includeProjectDependencyVersions = true
