@@ -1,3 +1,7 @@
+plugins {
+  id "com.gradle.plugin-publish" version "0.9.6"
+}
+
 apply plugin: 'idea'
 apply plugin: 'groovy'
 apply plugin: 'java-gradle-plugin'
@@ -34,6 +38,20 @@ test {
   testLogging {
     exceptionFormat 'full'
     showStandardStreams = true
+  }
+}
+
+pluginBundle {
+  website = 'https://github.com/etraveli/bom-verifier'
+  vcsUrl = 'https://github.com/etraveli/bom-verifier'
+  description = 'Plugin for checking differences between previous and current configuration dependencies.'
+  tags = ['verification']
+
+  plugins {
+    bomVerifier {
+      id = 'com.etraveli.bom-verfier'
+      displayName = 'BOM Verifier'
+    }
   }
 }
 
