@@ -38,7 +38,7 @@ org.testng:testng:6.8.8"""
     buildFile << """
             plugins {
               id 'java'
-              id 'bom-verifier'
+              id 'com.etraveli.bom-verifier'
             }
         """
 
@@ -59,7 +59,7 @@ org.testng:testng:6.8.8"""
     buildFile << """
             plugins {
               id 'java'
-              id 'bom-verifier'
+              id 'com.etraveli.bom-verifier'
             }
             ${BomVerifierPluginExtension.NAME} {
               bomFilePath = "$overriddenFileLocation"
@@ -83,7 +83,7 @@ org.testng:testng:6.8.8"""
     buildFile << """
             plugins {
               id 'java'
-              id 'bom-verifier'
+              id 'com.etraveli.bom-verifier'
             }
             ${BomVerifierPluginExtension.NAME} {
               bomFileName = "$overriddenFileName"
@@ -108,7 +108,7 @@ org.testng:testng:6.8.8"""
     buildFile << """
             plugins {
               id 'java'
-              id 'bom-verifier'
+              id 'com.etraveli.bom-verifier'
             }
             ${BomVerifierPluginExtension.NAME} {
               bomFilePath = "$overriddenFileLocation"
@@ -132,7 +132,7 @@ org.testng:testng:6.8.8"""
     buildFile << """
             plugins {
               id 'java'
-              id 'bom-verifier'
+              id 'com.etraveli.bom-verifier'
             }
             repositories {
               mavenCentral()
@@ -169,7 +169,7 @@ org.testng:testng:6.8.8"""
     buildFile << """
             plugins {
               id 'java'
-              id 'bom-verifier'
+              id 'com.etraveli.bom-verifier'
             }
             repositories {
               mavenCentral()
@@ -202,7 +202,7 @@ org.testng:testng:6.8.8"""
     buildFile << """
             plugins {
               id 'java'
-              id 'bom-verifier'
+              id 'com.etraveli.bom-verifier'
             }
             repositories {
               mavenCentral()
@@ -240,7 +240,7 @@ org.testng:testng:6.8.8"""
     buildFile << """
             plugins {
               id 'java'
-              id 'bom-verifier'
+              id 'com.etraveli.bom-verifier'
             }
             repositories {
               mavenCentral()
@@ -291,7 +291,7 @@ org.testng:testng:6.8.8"""
     buildFile << """
             plugins {
               id 'java'
-              id 'bom-verifier'
+              id 'com.etraveli.bom-verifier'
             }
             repositories {
               mavenCentral()

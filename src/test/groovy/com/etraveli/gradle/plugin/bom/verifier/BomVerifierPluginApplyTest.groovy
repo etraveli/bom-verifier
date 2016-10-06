@@ -13,10 +13,10 @@ class BomVerifierPluginApplyTest extends Specification {
   def "Tasks are added to project when Java plugin is available"() {
     Project project = ProjectBuilder.builder().build();
     project.pluginManager.apply 'java'
-    project.pluginManager.apply 'bom-verifier'
+    project.pluginManager.apply 'com.etraveli.bom-verifier'
 
     expect:
-    project.pluginManager.hasPlugin('bom-verifier')
+    project.pluginManager.hasPlugin('com.etraveli.bom-verifier')
     project.tasks.getByName(BomWriterTask.NAME)
     project.tasks.getByName(BomVerifierTask.NAME)
   }
@@ -25,20 +25,20 @@ class BomVerifierPluginApplyTest extends Specification {
   def "Java plugins Check task depends on BOM verification task"() {
     Project project = ProjectBuilder.builder().build();
     project.pluginManager.apply 'java'
-    project.pluginManager.apply 'bom-verifier'
+    project.pluginManager.apply 'com.etraveli.bom-verifier'
 
     expect:
-    project.pluginManager.hasPlugin('bom-verifier')
+    project.pluginManager.hasPlugin('com.etraveli.bom-verifier')
     project.check.getDependsOn().contains(BomVerifierTask.NAME)
   }
 
   @Test
   def "Tasks are not added to project when Java plugin is not available"() {
     Project project = ProjectBuilder.builder().build();
-    project.pluginManager.apply 'bom-verifier'
+    project.pluginManager.apply 'com.etraveli.bom-verifier'
 
     expect:
-    project.pluginManager.hasPlugin('bom-verifier')
+    project.pluginManager.hasPlugin('com.etraveli.bom-verifier')
     project.tasks.findByName(BomWriterTask.NAME) == null
     project.tasks.findByName(BomVerifierTask.NAME) == null
   }

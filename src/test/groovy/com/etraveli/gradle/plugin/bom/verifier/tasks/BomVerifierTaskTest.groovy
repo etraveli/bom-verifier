@@ -30,7 +30,7 @@ class BomVerifierTaskTest extends Specification {
     buildFile << """
             plugins {
               id 'java'
-              id 'bom-verifier'
+              id 'com.etraveli.bom-verifier'
             }
             repositories {
               mavenCentral()
@@ -66,7 +66,7 @@ org.testng:testng:6.8.8"""
     buildFile << """
             plugins {
               id 'java'
-              id 'bom-verifier'
+              id 'com.etraveli.bom-verifier'
             }
             ${BomVerifierPluginExtension.NAME} {
               bomFilePath = "${testProjectDir.getRoot().absolutePath}"
@@ -99,7 +99,7 @@ org.testng:testng:6.8.8"""
     buildFile << """
             plugins {
               id 'java'
-              id 'bom-verifier'
+              id 'com.etraveli.bom-verifier'
             }
             repositories {
               mavenCentral()
@@ -142,7 +142,7 @@ org.testng:testng:6.8.8"""
     buildFile << """
             plugins {
               id 'java'
-              id 'bom-verifier'
+              id 'com.etraveli.bom-verifier'
             }
             ${BomVerifierPluginExtension.NAME} {
               bomFilePath = "${testProjectDir.getRoot().absolutePath}"
@@ -180,7 +180,7 @@ org.testng:testng:6.8.8"""
     buildFile << """
             plugins {
               id 'java'
-              id 'bom-verifier'
+              id 'com.etraveli.bom-verifier'
             }
             ${BomVerifierPluginExtension.NAME} {
               bomFilePath = "${testProjectDir.getRoot().absolutePath}"
@@ -221,7 +221,7 @@ org.testng:testng:6.8.8"""
     buildFile << """
             plugins {
               id 'java'
-              id 'bom-verifier'
+              id 'com.etraveli.bom-verifier'
             }
             ${BomVerifierPluginExtension.NAME} {
               bomFilePath = "${testProjectDir.getRoot().absolutePath}"
@@ -262,7 +262,7 @@ org.testng:testng:6.8.8"""
     buildFile << """
             plugins {
               id 'java'
-              id 'bom-verifier'
+              id 'com.etraveli.bom-verifier'
             }
             ${BomVerifierPluginExtension.NAME} {
               bomFilePath = "${testProjectDir.getRoot().absolutePath}"
