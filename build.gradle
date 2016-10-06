@@ -7,8 +7,7 @@ apply plugin: 'groovy'
 apply plugin: 'java-gradle-plugin'
 
 project.group = 'com.etraveli.gradle.plugin'
-ext.baseVersion = "1.0"
-project.version = project.baseVersion + ".0"
+project.version = project.getProperty("version")
 sourceCompatibility = 1.7
 targetCompatibility = 1.7
 
